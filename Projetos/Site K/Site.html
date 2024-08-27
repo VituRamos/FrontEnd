@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uia que site xuxuzin :D</title>
+    <link rel="stylesheet" href="Estilo.css" />
+    <script
+      src="https://kit.fontawesome.com/d402a5f0e7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Cabeçalho-->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, Im <span>Kevin </span><br />Jen from Australia</h1>
+        </div>
+      </div>
+    </div>
+
+    <!--Sobre-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-colum-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-colum-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              In this video we will create a personal portfolio website design
+              step by step using HTML CSS and JavaScript. You can use this
+              website to make your online resume or CV. In this website design
+              we will add name, designation of the user. Then we will display
+              the image, skills, work experience and education details. We will
+              also add the list of services and work portfolio on this website.
+              In the footer of this website we will add contact info and contact
+              form. Your can receive the contact form data on your google sheets
+            </p>
+
+            <!--Titulos-->
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <!--Conteudo Skills-->
+            <div class="tab-contents active-content" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+
+            <!--Conteudo Experience-->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>DATA - DATA</span><br />Designing Web/App interfaces
+                </li>
+                <li><span>DATA - DATA</span><br />Web app Development</li>
+                <li><span>DATA - DATA</span><br />Building Android/iOS apps</li>
+              </ul>
+            </div>
+
+            <!--Conteudo Education-->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>DATA</span><br />Designing Web/App interfaces</li>
+                <li><span>DATA</span><br />Web app Development</li>
+                <li><span>DATA</span><br />Building Android/iOS apps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Services-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <!--UI/UX-->
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Um monte de palvras escritas escrevendo, palavras para ter algo
+              escrito. Mais palavras, e tudo mais.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <!--WEB-->
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Um monte de palvras escritas escrevendo, palavras para ter algo
+              escrito. Mais palavras, e tudo mais.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <!--APP-->
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Um monte de palvras escritas escrevendo, palavras para ter algo
+              escrito. Mais palavras, e tudo mais.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------Portfolio-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!--Contact-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>contato@exemplo.com</p>
+            <p><i class="fa-solid fa-phone"></i>14998199854</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright Made with <i class="fa-solid fa-heart"></i> by Alguem Muito
+          Lecal
+        </p>
+      </div>
+    </div>
+
+    <script src="Funcoes.js"></script>
+  </body>
+</html>
