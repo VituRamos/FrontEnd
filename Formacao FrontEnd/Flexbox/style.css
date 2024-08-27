@@ -1,0 +1,24 @@
+.flex {
+  display: flex;
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+
+.flex-column {
+  display: flex;
+  background-color: #ccc;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.box {
+  height: 40px;
+  width: 25%;
+  border: 1px solid red;
+}

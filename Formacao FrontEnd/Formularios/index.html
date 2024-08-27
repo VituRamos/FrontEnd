@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Formularios HTML</h2>
+    <form action="register.php" method="get">
+      <!--Atibuto name-->
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" name="name" />
+      </div>
+
+      <!--Atributo idade-->
+      <div>
+        <label for="age">Idade:</label>
+        <input type="text" name="age" />
+      </div>
+
+      <!--Select-->
+      <div>
+        <label for="jov">Selecione a sua profissão:</label>
+        <select name="job" id="">
+          <option value="programador">Programador</option>
+          <option value="tester" selected>Tester</option>
+          <option value="devops">DevOps</option>
+        </select>
+      </div>
+
+      <!--Multiplas opções-->
+      <div>
+        <label for="items">Selecione os dados desejados:</label>
+        <select name="items" multiple>
+          <option value="pera">Pera</option>
+          <option value="arroz">Arroz</option>
+          <option value="feijao">Feijao</option>
+        </select>
+      </div>
+
+      <!--Area de texto-->
+      <div>
+        <label for="comment">Escreva abaixo um post:</label>
+        <textarea name="comment"></textarea>
+      </div>
+
+      <!--Fieldset e legend-->
+      <div>
+        <fieldset>
+          <legend>Preencha as suas informações:</legend>
+          <label for="firstname">Nome:</label>
+          <input type="text" name="firstname" />
+          <label for="lastname">Sobrenome:</label>
+          <input type="text" name="lastname" />
+        </fieldset>
+      </div>
+
+      <!--Datalist-->
+      <div>
+        <label for="flavor">Escolha o sabor:</label>
+        <input type="text" list="flavors" name="flavor" />
+
+        <datalist id="flavors">
+          <option value="cereja"></option>
+          <option value="morango"></option>
+          <option value="abacaxi"></option>
+          <option value="chocolate"></option>
+        </datalist>
+      </div>
+
+      <!--Checkbox-->
+      <div>
+        <label for="optionals">Opcionais do carro:</label>
+        <div class="radio">
+          <input type="checkbox" name="optionals[]" value="pneus" />
+          <label for="pneus">Pneus Grandes</label>
+        </div>
+        <div class="radio">
+          <input type="checkbox" name="optionals[]" value="motor" />
+          <label for="mortor">Motor Turbo</label>
+        </div>
+        <div class="radio">
+          <input type="checkbox" name="optionals[]" value="hibrido" />
+          <label for="hibrido">Hibrido</label>
+        </div>
+      </div>
+
+      <!--Data-->
+      <div>
+        <label for="data">Data</label>
+        <input type="date" name="data" />
+      </div>
+
+      <!--Arquivos-->
+      <div>
+        <label for="img">Insira a sua imagem:</label>
+        <input type="file" name="img" />
+      </div>
+
+      <!--Email-->
+      <div>
+        <label for="email">Digite o seu email</label>
+        <input type="email" name="email" />
+      </div>
+
+      <!--Value-->
+      <div>
+        <label for="value">Digite algum valor:</label>
+        <input type="text" value="O meu valor é esse" name="value" />
+      </div>
+
+      <!--Placeholder-->
+      <div>
+        <label for="currentjob">Digite sua profissao</label>
+        <input
+          type="text"
+          name="currentjob"
+          placeholder="Digite o trabalho atual aqui"
+        />
+      </div>
+
+      <!--Envio do form-->
+      <div>
+        <input type="submit" value="Enviar" />
+      </div>
+    </form>
+  </body>
+</html>
